@@ -13,6 +13,7 @@ const storeSchema = new mongoose.Schema({
     coordinates: [{ type: Number, required: 'You must supply coordinates.' }],
     address: { type: String, required: 'You must supply an address.' },
   },
+  photo: String,
 });
 
 storeSchema.pre('save', function(next) {
